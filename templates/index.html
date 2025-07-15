@@ -1,0 +1,10 @@
+<form method="post">
+    Mood: <input name="mood"><br>
+    Note: <textarea name="note"></textarea><br>
+    <button type="submit">Submit</button>
+</form>
+
+<h3>Entries:</h3>
+{% for mood, note in entries %}
+    <p><b>{{ mood }}:</b> {{ note }}</p>
+{% endfor %}
